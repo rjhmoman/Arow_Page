@@ -1,0 +1,335 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=REM:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+:root {
+    --primary: #EA580C;
+    --lightPrimary: #ea580c33;
+}
+.container{
+    width: 1320px;
+    margin: 0 auto;    
+}
+/* =====================navstart======================== */
+nav{
+    padding: 16px 0 ;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px 0px rgba(0,0,0, 0.25)  ;
+
+}
+.navWrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav ul li{
+    display: inline-block;
+    margin-left: 35px;
+}
+nav ul li a{
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    color: #000000;
+    transition: .4s; 
+
+}
+nav ul li a:hover{
+    color: var(--primary);
+}
+nav .navBtn{
+    background: var(--primary);
+    text-decoration: none;          
+    color: #FFFFFF;
+    padding: 8px 15px;
+    border-radius: 30px;
+}
+nav .btnIcon{
+    margin-right: 11px;
+    transform: rotate(180deg);
+
+}
+
+/* =====================navend======================== */
+
+/* =====================bannerstart=================== */
+#banner{
+    background: var(--lightPrimary);
+    padding-top: 37px;
+    padding-bottom: 160px;
+}
+#banner .bell{
+    width: 26px;
+    height: 26px;
+    background: var(--lightPrimary);
+    border-radius: 50%;
+    text-align: center;
+    line-height: 26px;
+    
+}
+.bannerWrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.bannertitle h4{
+    font-size: 14px;
+    font-weight: 700;
+    color: #000000;
+}
+.bannertitle{
+    width: 167px;
+    height: 26px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    border: 1px solid var(--lightPrimary);
+    border-radius: 33px;
+    margin-top: 117px;
+}
+.banner_text_area h1{
+    font-size: 36px;
+    line-height: 45px;
+    font-weight: 700;
+    color:#09090B;
+    width: 567px;
+    margin: 16px 0;
+}
+.banner_text_area p{
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: 400;
+    color: #71717A;
+    width: 576px;
+    font-family: "REM", sans-serif;
+}
+.banner_text_area .gBtn{
+    text-decoration: none;
+    align-items: center;
+    padding: 10px 30px;
+    background: var(--primary);
+    color: #FFFFFF;
+    display: inline-block;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 500 ;
+    margin-top: 62px;
+}
+.bannerItem {
+    display: flex;
+    align-items: center;
+    gap: 38.52px;
+    background: rgb(234, 88, 12,0.05);
+    width: 424px;
+    padding: 25px 61px;
+    border-radius: 8px;
+    border: 1px solid var(--lightPrimary);
+}
+.bannerItem .gearIcon{
+    font-size: 40px;
+    margin-left: -20px;      
+}
+.bannerItem .f{
+    font-size: 40px;
+    margin-left: -20px;      
+}
+.bannerItem .h{
+    font-size: 40px;
+    margin-left: -20px;      
+}
+
+.bannerItem h4{
+    font-size: 20px;
+    font-weight: 700;
+    color: #09090B;
+    
+}    
+.bannerItem p{
+    font-size: 16px;
+    font-weight: 500;
+    color: #71717A;
+    width: 296px;
+    margin-top: 29px;
+}
+.bannerItemWrapper{
+    position: relative;
+}
+.bannerItemWrapper ::after{
+    content: '';
+    width: 1px;
+    height: 88px;
+    background: var(--lightPrimary);
+    position: absolute;
+    top: 50%;
+    left: -19px;    
+    transform: translateY(-50%);
+} 
+.bennerItemBox{
+    display: flex;
+    justify-content: space-between;
+}
+
+/* =====================bannerend=================== */
+/* =====================sponsor start=================== */
+#sponsor{
+    padding-top: 80px;   
+    padding-bottom: 71px;
+}
+#sponsor h4{
+    text-align: center;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    color: #09090B;
+    margin-bottom: 24px;
+    
+}
+.sponsorWrapper{
+    display: flex;
+    justify-content: space-between;
+}
+/* =====================sponsor end=================== */
+/* =====================Assisting start=================== */
+#assisting{     
+    padding: 70px 0;
+    background: rgb(170, 170, 170,.4);
+}
+.assisting_text_Wrapper h2{
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 40px;
+    width: 495px;
+    color: #09090B;
+}
+.assisting_text_Wrapper p{
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    width: 652px;
+    color: #52525B;
+    margin-top: 13px;
+}
+.assisting_text_Wrapper a{
+    font-size: 24px;
+    color: var(--primary);
+    background: var(--lightPrimary);
+    padding: 8px 16px;
+    border-radius: 8px;
+    display: inline-block;
+    margin-top: 14px;
+
+}
+.assistingWrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;    
+}
+.assisting_form_Wrapper h3{
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 32px;
+    width: 388px;
+    color: #09090B;
+
+}
+.assisting_form_Wrapper p{
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    width: 532px; 
+    color: #71717A;
+}
+.assistingBox{
+    background: #FFFFFF;
+    padding: 20px 29px;
+    border-radius: 8px;    
+}
+.assistingBox form label{
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    color: #000000;
+    display: block;
+    margin-bottom: 2px;
+    margin-top: 8px;
+}
+.assistingBox form input{   
+    width: 548px;
+    height: 48px;
+    border-radius: 8px;
+    border: 1px solid#C8C8C8;
+    outline: none;
+}
+.assistingBox form ::placeholder{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #7F7F87;
+    padding-left: 28px;
+}
+.assistingBox form .formbox{
+    margin-bottom: 21px;
+}
+#assisting .ipbtn{
+    width: 90px;
+    height: 44px;
+    color: #FFFFFF;
+    background: #000000;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 24px;
+    text-align: center;
+
+}
+/* =====================Assisting end=================== */
+/* =====================ServicesPart start=================== */
+
+/* =====================ServicesPart end=================== */
+/* =====================TESTIMONIALS start=================== */
+#trstimonials{
+    margin-bottom: 200px;
+}
+.trstimonials_main_box {
+    text-align: center ;      
+}
+.trstimonials_main_box h4 {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 28px;
+    color: #09090B;
+    border: 1px solid #71717A;
+    border-radius: 5px;
+    display: inline-block;
+    padding: 3.33px 20.17px;
+    margin-bottom: 16.16px;
+}
+.trstimonials_main_box h2 {
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 60px;
+    color: #09090B;
+    width: 620px;
+    margin: 0 auto;
+    
+}
+.trstimonials_main_box .qute {
+    font-size: 36px;
+    color: #09090B;
+    transform: rotate(180deg);
+    margin-top: 27px;
+  
+} 
+.trstimonials_main_box h5 {
+    font-size: 24px;
+    color: #71717A;
+    line-height: 40px;
+    font-weight: 500;
+    width: 839px;  
+    margin: 0 auto;
+}       
+    
+/* =====================TESTIMONIALS end=================== */
